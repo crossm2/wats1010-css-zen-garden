@@ -7,37 +7,69 @@ html {
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
-	color: #555753;  
+	color: #8968CD;  
 	margin: 0; 
 	padding: 0;
 	background:url(purple-iris-bird-background.jpg) no-repeat top left; 
 	background-size: 100%;
 	background-attachment: fixed;
-	}
+}
 /* specific divs */
 .page-wrapper {   
 	margin: 0 auto;
-	width: 700px;
+	width: 586px;
 	}
+a {
+	color:#4F94CD;
+}
+a:hover {
+	color:#63B8FF;
+}
 
 .intro {
-	background:url(blue-watercolor-background.jpg) no-repeat;
-	height: 200px;
+	height: 180px;
 	background-size: 100%;
+	margin-top:25px;
 }
+
+.intro::after {
+  content: "";
+  background: url(blue-watercolor-background.jpg) no-repeat;
+	-moz-border-radius: 0 120px 0 120px;
+	-webkit-border-radius: 0 120px 0 120px;
+	border-radius: 0 120px 0 120px;
+  	opacity: 0.8;
+	height: 180px;
+	width:586px;
+ 	top: 25px;
+  	left: 297px;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+    z-index: -1;   
+}
+
  h1 {
 	color: #E6E6FA;
 	float: left;
-	text-shadow: -1px -1px 1px #9370DB, 1px 1px 1px #8968CD;
-	 font-size: 2.2em;
+	text-shadow: -1px -1px 1px #B452CD, 1px 1px 1px #B452CD;
+	 font-size: 3.2em;
 	 margin-bottom:0;
-}
+	 width: 399px;
+	padding-bottom: 0;
+	 margin-left:16px;
+	height: 39px;
+	 margin-top: 0;
+ }
 h2 { 
-	color:#E066FF;
+	color:#8968CD;
 	float: left;
-	text-shadow: -1px -1px 1px #9370DB, 1px 1px 1px #E6E6FA;
-	 font-size: 2.2em;
+	text-shadow: -1px -1px 1px #E6E6FA, 1px 1px 1px #7B68EE;
+	padding-top: 0;
+	font-size: 1.2em;
+	margin-left:21px;
 }
+
 .summary {
 	float: right;
 	border-bottom-style:outset;
@@ -48,47 +80,75 @@ h2 {
 	border-top-color: white;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	width: 155px;
+	font-size: 0.87em;
+	margin-right: 50px;
+	margin-top: 15px;
+	padding: 3px;
 	
 	}
 .summary p {
-	font: italic 1.1em georgia; 
-	text-align: center;
+	font: italic georgia; 
 	line-height: 1;
-	color: #B452CD;
 	}
-.summary a {
-	color:#7B68EE;
-}
 
 .preamble {
 	display: inline-block;
-	background:pink;
-	width: 350px;
+	background-color:rgb(255,255,153); 
+	background-color:rgba(255,255,153,.8);
+	width: 366px;
+	height:252px;
 	line-height:1.4;
+	margin-top: 10px;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 0;
+	padding-top: 22px;
+	padding-left: 40px;
+	padding-right: 17px;
 	}
+h3::first-letter{
+	font-size:1.8em;
+	color:#B452CD;
+	font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
+	letter-spacing:2px;
+	padding-left:1px;
+}
+
+p {
+	text-align: justify;
+}
 .supporting {	
 	display: inline-block; 
-	background:pink;
-	width: 350px;
-	margin-top: 285px;
+	background-color:rgb(255,255,153); 
+	background-color:rgba(255,255,153,.8);
+	width: 366px;
+	margin-top: 274px;
 	line-height:1.4;
+	padding-left:40px;
+	padding-right:17px;
 	}
 
 .sidebar { 
 	position: absolute; 
-	top: 169px; 
+	top: 205px; 
 	right: auto;
 	left: auto;
-	margin-left: 350px;
+	margin-left: 423px;
+	width: 162px;
 	
 	}
 .sidebar .wrapper { 
-	background:pink;
+	background-color:rgb(255,255,153); 
+	background-color:rgba(255,255,153,.8);
 	font: 10px verdana, sans-serif; 
+	border-bottom-right-radius: 120px;
+	border-bottom-left-radius: 0;
+	height:1593px;
+	padding-top:22px;
 	}
 .sidebar h3.select {  
 	margin: 10px 0 5px 0; 
-	width: 97px; 
+	width: 117px; 
 	height: 16px; 
 
 	}
@@ -105,7 +165,10 @@ h2 {
 
 .sidebar ul {
 	margin: 0;
-	padding: 0;
+	padding: 5px;
+	border-left-color: -moz-use-text-color;
+	border-left-style:outset;
+	border-width:.1px;
 	}
 .sidebar li {
 	line-height: 1.3em; 
@@ -113,10 +176,30 @@ h2 {
 	padding-top: 5px; 
 	margin-bottom: 5px;
 	list-style-type: none;
+	border-bottom-color: -moz-use-text-color;
+	border-bottom-style:inset;
+	border-width:.1px;
+	padding-bottom: 5px;
+	padding-left: 2px;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #4F94CD;
 	}
+.sidebar li a:hover {
+	color:#63B8FF;
+}
 .sidebar li a:visited {
 	color: #B3AE94;
 	}
+.design-selection a {
+    display: block;
+    font-size: 1.1em;
+    color: #789B51;
+	text-decoration: none;
+}
+a.designer-name {
+	font-size: .9em;
+	display: inline;
+}
+	
+
