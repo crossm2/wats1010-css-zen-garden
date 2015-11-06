@@ -4,6 +4,7 @@ html {
 	margin: 0;
 	padding: 0;
 	}
+
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
@@ -14,7 +15,7 @@ body {
 	background-size: 100%;
 	background-attachment: fixed;
 }
-/* specific divs */
+
 .page-wrapper {   
 	margin: 0 auto;
 	width: 586px;
@@ -38,9 +39,13 @@ a:hover {
 	-moz-border-radius: 0 120px 0 120px;
 	-webkit-border-radius: 0 120px 0 120px;
 	border-radius: 0 120px 0 120px;
+	border-color:rgb(255,255,153); 
+	border-color:rgba(255,255,153,.8);
+	border-width: 3px;
+	border-style: solid;
   	opacity: 0.8;
-	height: 180px;
-	width:586px;
+	height: 174px;
+	width:580px;
  	top: 25px;
   	left: 297px;
   	bottom: 0;
@@ -48,26 +53,35 @@ a:hover {
   	position: absolute;
     z-index: -1;   
 }
+@keyframes h1 {
+    0%   {color: #FFFF00;}
+    25%  {color: #8968CD;}
+    50%  {color: #FFFF00;}
+    100% {color: #8968CD;}
+}
 
  h1 {
-	color: #E6E6FA;
+	color:#B452CD;
 	float: left;
-	text-shadow: -1px -1px 1px #B452CD, 1px 1px 1px #B452CD;
-	 font-size: 3.2em;
+	text-shadow: -1px 4px 7px #FAFAD2, 1px 4px 1px #FAFAD2;
+	 font-size: 4.2em;
 	 margin-bottom:0;
 	 width: 399px;
 	padding-bottom: 0;
 	 margin-left:16px;
 	height: 39px;
 	 margin-top: 0;
+	 font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
+	animation-name: h1;
+    animation-duration: 5s;
  }
 h2 { 
 	color:#8968CD;
 	float: left;
 	text-shadow: -1px -1px 1px #E6E6FA, 1px 1px 1px #7B68EE;
-	padding-top: 0;
+	padding-top: 20px;
 	font-size: 1.2em;
-	margin-left:21px;
+	margin-left:38px;
 }
 
 .summary {
@@ -202,4 +216,12 @@ a.designer-name {
 	display: inline;
 }
 	
-
+.design-archives li {
+	padding-bottom: 16px;
+}
+.zen-resources li {
+	padding-bottom:16px;
+}
+footer a {
+	padding-right: 11px;
+}
