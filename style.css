@@ -55,8 +55,16 @@ a:hover {
 }
 @keyframes h1 {
     0%   {color: #FFFF00;}
-    25%  {color: #8968CD;}
-    50%  {color: #FFFF00;}
+    15%  {color: #8968CD;}
+    25%  {color: #FFFF00;}
+    35% {color: #8968CD;}
+	45%   {color: #FFFF00;}
+    55%  {color: #8968CD;}
+    65%  {color: #FFFF00;}
+    75% {color: #8968CD;}
+	85%   {color: #FFFF00;}
+    95%  {color: #8968CD;}
+    99%  {color: #FFFF00;}
     100% {color: #8968CD;}
 }
 
@@ -73,7 +81,7 @@ a:hover {
 	 margin-top: 0;
 	 font-family: "Edwardian Script ITC", "Brush Script MT", cursive;
 	animation-name: h1;
-    animation-duration: 5s;
+    animation-duration: 30s;
  }
 h2 { 
 	color:#8968CD;
@@ -202,9 +210,7 @@ p {
 .sidebar li a:hover {
 	color:#63B8FF;
 }
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+
 .design-selection a {
     display: block;
     font-size: 1.1em;
