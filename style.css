@@ -50,7 +50,8 @@ a:hover {
   	position: absolute;
     z-index: -1;   
 	margin-left: -424px;
-	margin-top: -170px;
+	margin-top: -167px;
+	border-bottom:0;
 }
 @keyframes h1 {
     0%   {color: #FFFF00;}
