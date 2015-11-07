@@ -50,7 +50,7 @@ a:hover {
   	position: absolute;
     z-index: -1;   
 	margin-left: -424px;
-	margin-top: -170px;
+	margin-top: -169px;
 }
 @keyframes h1 {
     0%   {color: #FFFF00;}
@@ -126,6 +126,7 @@ h2 {
 	padding-top: 22px;
 	padding-left: 40px;
 	padding-right: 17px;
+	position: relative;
 	}
 h3::first-letter{
 	font-size:1.8em;
@@ -147,6 +148,7 @@ p {
 	line-height:1.4;
 	padding-left:40px;
 	padding-right:17px;
+	position:relative;
 	}
 
 .sidebar { 
